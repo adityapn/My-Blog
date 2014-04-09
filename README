@@ -1,6 +1,6 @@
-Running the Tornado AppEngine example
+Running the Tornado AppEngine 
 =====================================
-This example is designed to run in Google AppEngine, so there are a couple
+This blog is designed to run in Google AppEngine, so there are a couple
 of steps to get it running. You can download the Google AppEngine Python
 development environment at http://code.google.com/appengine/downloads.html.
 
