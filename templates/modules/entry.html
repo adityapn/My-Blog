@@ -1,0 +1,16 @@
+<div class="entry">
+  <h1><a href="/entry/{{ entry.slug }}">{{ entry.title }}</a></h1>
+  <div class="date">{{ locale.format_date(entry.published, full_format=True, shorter=True) }}</div>
+  
+  <div class="body">  	
+  	{% raw entry.html %}
+  	<br/>
+  	Share On : 
+  	<a href="https://www.facebook.com/sharer/sharer.php?u={{url}}" target=_blank>
+  		 Facebook
+  	</a>
+  </div>
+  {% if current_user and current_user.administrator %}
+    <div class="admin"><a href="/compose?key={{ str(entry.key()) }}">{{ _("Edit this post") }}</a></div>
+  {% end %}
+</div>
